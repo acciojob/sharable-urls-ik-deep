@@ -6,7 +6,7 @@ function changeUrl(){
 
 	let newText = "https://localhost:8080/";
 	if(name.value.length >0 && year.value.length>0){
-		newText +="?name="+name.value+"?year="+year.value; 
+		newText +="?name="+name.value+"&year="+year.value; 
 	}else if(name.value.length >0 && year.value.length<=0){
 	    newText+="?name="+name.value;
 	}else if(name.value.length <=0 && year.value.length>0){
